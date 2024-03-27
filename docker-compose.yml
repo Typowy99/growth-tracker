@@ -4,6 +4,8 @@ services:
   app:
     build:
       context: .
+      args:
+        - DEV=true
       dockerfile: Dockerfile  # Optional: specifies the name of the Dockerfile (default is 'Dockerfile')
     ports:
       - "8000:8000"
